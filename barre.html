@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <span class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore earum corrupti eum, delectus quisquam rem eligendi fuga itaque nobis aperiam eaque at commodi maxime assumenda iure? Libero quidem amet totam.</span>
+    </div>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        height: 40px;
+        width: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .txt{
+        white-space: nowrap;
+        font-size: 170px;
+        animation: Scroll 40s linear infinite;
+    }
+
+    @keyframes Scroll {
+        0% {
+            transform: translate(-100%);
+        }
+
+        100%{
+            transform: translateX(0%);
+        }
+    }
+</style>
